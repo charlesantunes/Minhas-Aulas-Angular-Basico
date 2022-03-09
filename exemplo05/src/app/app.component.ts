@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exemplo05';
+  pag1:boolean = true;
+  
+  alterarPagina(){
+    this.pag1 = !this.pag1;
+  }
 }
