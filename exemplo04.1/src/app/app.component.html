@@ -1,0 +1,29 @@
+<!-- Todos os exemplos até o Event binding, são conceitos de Data Binding, onde o arquivo.ts envia dados p/ o arquivo.html
+// Usando o data binding {{}}, serve para, exibe um elemento do componente ts para o componente html 
+// Usa variaveis do ts e exibe ou faz calculos no html
+<h1 style="margin-left: 190px;">{{nome}}</h1>
+<img src="{{image}}" alt="Cidade de Belém" width="500" > ,<br />
+
+<img [src]="image" alt="Cidade de Belém" width="300" style="margin: 30px 0 30px 90px;">
+<hr>
+<h2 style="margin-left: 150px;">Idade = {{numero2 - numero1}} anos</h2>
+<hr>
+// Event binding = é como chama uma função no Angular
+<button (click)="mensagem()" style="margin-left: 150px;">Clique para informações</button>
+-->
+
+<!-- two-way binding, quando arquivo.ts e arquivo.html podem se cominicar enviando dados um para o outro
+primiero no app.mudule.ts, import { FormsModule } from '@angular/forms';  e nas linhas a baixo  no imports: [FormsModule]
+-->
+<!-- ngModel é a função que mostra os dados/informações sem apagar a informação que já estava, no caso soma as informações, assim, envia e recebe dados.-->
+<input type="text" [(ngModel)]="nome">
+<h1>{{nome}}</h1>
+
+<!--Exemplos ngModel com objetos-->
+Nome: <input type="text" [(ngModel)]="pessoa.nome"> <br /><br />
+Idade : <input type="text" [(ngModel)]="pessoa.idade"> <br /><br />
+Cidade:<input type="text" [(ngModel)]="pessoa.cidade"> <br /><br />
+<hr>
+<input type="text" [(ngModel)]="pessoa.nome">
+<input type="text" [(ngModel)]="pessoa.idade">
+<input type="text" [(ngModel)]="pessoa.cidade">
