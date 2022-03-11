@@ -1,0 +1,34 @@
+ <!--104-para rodar essa página precisa ir no cursos.component.ts na parte do @Component e copiar o valor do seletor que app-cursos e colar no app.component.html.-->
+
+<!--107 antes de iniciar o formulário e tabela, foi comentado toda uma estrutura no componente cursus.component.ts para evitar erro no carregamento da página-->
+<!--108-Formulário-->
+
+<form action="">
+<input type="text" placeholder="Curso" [(ngModel)]="curso.nomeCurso" name="nomeCurso"> <!--113-exporte com ngModel a variável nomeCurso de curso.ts, vai faltar o erro do curso-->
+<input type="number" placeholder="valor" [(ngModel)]="curso.valorCurso" name="valorCurso"> <!--113-exporte com ngModel a variável valorCurso de curso.ts, vai faltar o erro do curso -->
+<input type="text" placeholder="Área" [(ngModel)]="curso.areaCurso" name="areaCurso"> <!--113-exporte com ngModel a variável areaCurso de curso.ts, vai faltar o erro do curso -->
+<input type="button" value="Cadastrar" (click)="cadastrar()" *ngIf="id<0">
+<input type="button" value="Editar" (click)="atualizar()"  *ngIf="id>=0">
+</form>
+
+<!--109-Tabela-->
+<table>
+    <tr>
+        <td>Curso</td>
+        <td>Valor</td>
+        <td>Área</td>
+        <td>Ações</td>
+    </tr>
+
+    <!--112-Exibir os valores da inicialização do ngOnInit() do component do cursos.component.ts-->
+    <tr *ngFor="let curso of vetorCursos">
+        <td>{{curso.nomeCurso}}</td>
+        <td>{{curso.valorCurso}}</td>
+        <td>{{curso.areaCurso}}</td>
+        <td>
+            <button ((click)="editar(id)")>Editar</button> <!--119-criando o botão para editar-->
+            <button ((click)="excluir(id)")>Excluir</button> <!--116-criando o botão para excluir-->
+        </td>
+    </tr>
+
+</table>
