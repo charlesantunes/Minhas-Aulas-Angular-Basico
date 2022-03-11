@@ -25,7 +25,7 @@ Comandos Básicos de criação de projetos e componentes do Angular.
  </tr>
  <tr>
    <td>ng serve --open</td>
-   <td>ng s --open</td>     
+   <td>ng s --o</td>     
    <td>Executa o projeto na página web</td>
  </tr>
  <tr>
