@@ -16,7 +16,7 @@ Comandos Básicos de criação de projetos e componentes do Angular.
  <tr> 
    <td>📚Código completo📚</td>
    <td>📚Código abreviada📚</td>
-   <td>📚Informações📚</td>
+   <td>📚Descrições📚</td>
  </tr> 
  <tr>
    <td>ng new nomeDoProjeto</td>
