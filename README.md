@@ -31,15 +31,15 @@ Comandos Básicos de criação de projetos e componentes do Angular.
  <tr>
    <td>ng generate service cursos/cursos</td>
    <td>ng g s cursos/cursos</td>     
-   <td>Dentro da pasta app cria uma pasta cursos 
-    que dentro <br \>cria outra pasta cursos com serviços
+   <td>Dentro da pasta app cria uma pasta cursos
+    <br \>que dentro cria outra pasta cursos com serviços
     do curso dentro </td>
  </tr>
  <tr>
    <td>ng generate component cursos</td>
    <td>ng g c cursos</td>     
    <td>Dentro da pasta app cria uma pasta cursos
-    com<br \> componentes dentro</td>
+    <br \>com componentes dentro</td>
  </tr>
  
  
